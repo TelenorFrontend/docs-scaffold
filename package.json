@@ -7,7 +7,7 @@
     "test": "npm run test:eslint && npm run test:stylelint",
     "commitmsg": "validate-commit-msg",
     "test:eslint": "eslint './**/*.js'",
-    "test:stylelint": "stylelint 'scss/**/*.scss'",
+    "test:stylelint": "stylelint './scss/**/*.scss'",
     "release": "standard-version --silent",
     "release:patch": "npm run release -- --release-as patch",
     "release:minor": "npm run release -- --release-as minor",

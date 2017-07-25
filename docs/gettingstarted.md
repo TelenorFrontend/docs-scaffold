@@ -13,6 +13,10 @@ Fork using the graphical interface on GitHub, or run the following command.
 
 The docs-scaffold includes build scripts, templates, layouts, example pages and a little javascript that you can use as-is or modify to your liking.
 
+Make sure you install all dependencies by running
+
+> $ npm install
+
 Start by modifying the config files in the `config` folder, and the documentation itself in the `docs` folder.
 
 To build the documentation, all you have to do is run the npm script `build`. This will package all the assets and generate static html pages from the documentation in the `docs` folder.

@@ -1,7 +1,6 @@
 extends: ./node_modules/tn-conventions/scss/.stylelintrc.yml
 rules:
   selector-max-type: 2
-  max-nesting-depth: 6
   at-rule-no-unknown:
   - true
   - ignoreAtRules:

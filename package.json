@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "del-cli build/",
-    "build:script": "mkdir -p build/script && uglifyjs script/script.js node_modules/barba.js/dist/barba.min.js --output build/script/script.js",
+    "build:script": "mkdirp build/script && uglifyjs script/script.js node_modules/barba.js/dist/barba.min.js --output build/script/script.js",
     "build:style": "node lib/build-style.js",
     "build:docs": "node lib/build-docs.js",
     "build": "npm run clean && npm run build:docs && npm run build:style && npm run build:script",
@@ -48,6 +48,7 @@
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-navigation": "^0.2.9",
     "mkdir-recursive": "^0.3.0",
+    "mkdirp": "^0.5.1",
     "node-normalize-scss": "^3.0.0",
     "node-sass": "^4.5.3",
     "telenor-component-library": "git+https://github.com/TelenorFrontend/component-library.git",

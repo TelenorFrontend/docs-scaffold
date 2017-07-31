@@ -31,23 +31,27 @@
 </div>
 
 <script>
-  function pageReady() {
+  function pageReady(container) {
+    const id = "swagger-ui-" + Date.now();
+    container.querySelector("#swagger-ui").setAttribute("id", id);
+
     const ui = SwaggerUIBundle({
       url: "{{ openApiUrl }}",
-      dom_id: '#swagger-ui',
+      dom_id: "#"+id,
       presets: [
-        SwaggerUIBundle.presets.apis
+        SwaggerUIBundle.presets.apis,
+        SwaggerUIDocsPreset
       ],
       plugins: [
         SwaggerUIBundle.plugins.DownloadUrl
       ],
-      layout: "BaseLayout"
+      layout: "DocsLayout"
     });
 
     window.ui = ui;
   }
 
   window.addEventListener("load", function() {
-    pageReady();
+    pageReady(document);
   });
 </script>

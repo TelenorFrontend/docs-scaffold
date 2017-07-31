@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         if(js != null){
             eval(js.innerHTML);
             if (typeof pageReady === "function") {
-                pageReady();
+                pageReady(container);
             }
         }
     });

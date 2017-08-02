@@ -1,0 +1,45 @@
+.docs-search {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-width: 940px;
+  height: 100%;
+  box-sizing: border-box;
+  pointer-events: auto;
+  padding-top: 64px;
+
+  &__close {
+    position: absolute;
+    top: 19px;
+    right: 220px;
+    color: $docs-color--black54;
+    z-index: 4;
+
+    &:hover {
+      color: $docs-color--black38;
+    }
+  }
+
+  &__results {
+    height: calc(100% - 64px);
+    list-style-type: none;
+    margin: 0;
+    padding: 48px;
+    padding-top: 12px;
+    background-color: white;
+
+    h2 {
+      margin-top: 32px;
+    }
+  }
+
+  &__details {
+    margin: 0;
+    color: $docs-color--black54;
+  }
+
+  &__result {
+    margin-top: 32px;
+  }
+}

@@ -1,5 +1,6 @@
 ---
 title: Navigation
+lunr: true
 nav_sort: 2
 nav_groups:
   - primary

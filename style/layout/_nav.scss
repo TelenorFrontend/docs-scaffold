@@ -5,7 +5,7 @@
   left: 0;
   width: 260px;
   padding: 0 0 16px;
-  padding-left: calc(50% - 940px / 2 - 260px);
+  padding-left: calc(50% - 940px / 2 - 260px + .5 * (100vw - 100%));
   background-color: #f5f5f5;
   overflow-x: hidden;
   overflow-y: auto;

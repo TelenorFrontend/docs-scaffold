@@ -12,4 +12,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             pageReady(container);
         }
     });
+    if (typeof pageReady === "function") {
+        pageReady(document);
+    }
 });

@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     Barba.Pjax.start();
     Barba.Prefetch.init();
     Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
+        hideSearchResults();
+
         const js = container.querySelector("script");
         if (js === null) {
             return;
@@ -15,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             pageReady(container);
         }
     });
+
     if (typeof pageReady === "function") {
         pageReady(document);
     }
@@ -65,14 +68,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         return;
       }
       hideSearchResults();
-      clearSearchBox();
-    });
-
-    // hide search results when one of them is clicked
-    document.getElementById("docs-search__results").addEventListener('click', function(e) {
-      if(e.target.tagName === "A") {
-        hideSearchResults();
-      }
     });
 });
 

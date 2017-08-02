@@ -55,7 +55,7 @@
     "node-normalize-scss": "^3.0.0",
     "node-sass": "^4.5.3",
     "swagger-ui-dist": "^3.0.21",
-    "swagger-ui-docs-preset": "github:TelenorFrontend/swagger-ui-docs-preset",
+    "swagger-ui-docs-preset": "git+https://github.com/TelenorFrontend/swagger-ui-docs-preset.git",
     "remark": "^8.0.0",
     "strip-markdown": "^3.0.1",
     "telenor-component-library": "git+https://github.com/TelenorFrontend/component-library.git",

@@ -8,10 +8,11 @@
   box-sizing: border-box;
   pointer-events: auto;
   padding-top: 64px;
+  z-index: 1;
 
   &__close {
     position: absolute;
-    top: 19px;
+    top: 20px;
     right: 220px;
     color: $docs-color--black54;
     z-index: 4;

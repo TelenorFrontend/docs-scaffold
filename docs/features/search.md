@@ -14,4 +14,4 @@ Lunr is set up for the english language, so if you wish to write documentation i
 
 To have a page show up in the search results, simply add `lunr: true` to the metadata. The search will match `tags`, `title` and content of the page.
 
-**Tags should be single words that do not contain spaces**
+Tags can be an array of strings if they should only match exactly, or a string (for example comma separated phrases) if they should be matched more loosely.

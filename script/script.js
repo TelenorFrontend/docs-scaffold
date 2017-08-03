@@ -154,7 +154,7 @@ function getPreviewAtPos(target, str) {
     }
 
     for (let i = 0; i < sentences.length; i++) {
- 		pos += sentences[i].length + 1;
+        pos += sentences[i].length + 1;
         if (pos >= target) {
             sentence += sentences[i] + ".";
             sentenceNum = i;

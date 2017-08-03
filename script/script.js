@@ -130,10 +130,14 @@ function search(text) {
 
 function showSearchResults() {
     document.getElementById("docs-search").style.display = "block";
+    document.getElementById("docs-search__close").style.opacity = "1";
+    document.getElementById("docs-search__close").style.pointerEvents = "auto";
 }
 
 function hideSearchResults() {
     document.getElementById("docs-search").style.display = "none";
+    document.getElementById("docs-search__close").style.opacity = "0";
+    document.getElementById("docs-search__close").style.pointerEvents = "none";
 }
 
 function clearSearchBox() {

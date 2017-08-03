@@ -4,18 +4,18 @@
   top: 0;
   width: 100%;
   max-width: 940px;
-  height: 100%;
+  height: calc(100% - 64px);
   box-sizing: border-box;
   pointer-events: auto;
-  padding-top: 64px;
+  margin-top: 64px;
   z-index: 1;
 
   &__close {
-    position: absolute;
-    top: 20px;
-    right: 220px;
+    width: 48px;
+    margin-top: 6px;
     color: $docs-color--black54;
-    z-index: 4;
+    opacity: 0;
+    pointer-events: none;
 
     &:hover {
       color: $docs-color--black38;

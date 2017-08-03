@@ -40,6 +40,9 @@
       <h1>{{ title }}</h1>
       {{> _breadcrumbs }}
       {{{ contents }}}
+      {{#if editUrl }}
+        <a class="docs-edit-btn" href="{{ editUrl }}" target="_blank">Edit this page</a>
+      {{/if}}
     </div>
     <div id="docs-search" class="docs-search">
       <a href="#" id="docs-search__close" class="docs-search__close"><i class="material-icons md-64">close</i></a>

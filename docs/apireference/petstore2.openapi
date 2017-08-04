@@ -1,9 +1,0 @@
----
-title: Pet Store Extended
-lunr: true
-nav_sort: 2
-nav_groups:
-  - tertiary
-openApiUrl: http://petstore.swagger.io/v2/swagger.json
-tags: api, specification, spec, petstore.swagger.io/v2
----

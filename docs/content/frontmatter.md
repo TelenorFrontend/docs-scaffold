@@ -1,13 +1,8 @@
 ---
 title: Front Matter
-lunr: true
 nav_sort: 2
 nav_groups:
   - primary
-tags:
-  - front
-  - matter
-  - metadata
 ---
 Front matter allows you to attach metadata to files by prepending a yaml document to it. Metalsmith parses this yaml document and passes it along to the plugins that transform the content into beautiful documentation.
 

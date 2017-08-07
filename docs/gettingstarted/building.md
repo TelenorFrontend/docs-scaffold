@@ -1,12 +1,8 @@
 ---
 title: Building
-lunr: true
 nav_sort: 3
 nav_groups:
   - primary
-tags:
-  - build
-  - npm
 ---
 The npm build script will package assets and build the documentation.
 

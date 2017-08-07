@@ -1,10 +1,8 @@
 ---
 title: Navigation
-lunr: true
 nav_sort: 2
 nav_groups:
   - primary
-tags: navigation
 ---
 The navigation is powered by [metalsmith-navigation](https://github.com/unstoppablecarl/metalsmith-navigation).
 

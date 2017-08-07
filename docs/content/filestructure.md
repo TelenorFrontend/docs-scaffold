@@ -1,13 +1,8 @@
 ---
 title: File Structure
-lunr: true
 nav_sort: 1
 nav_groups:
   - primary
-tags:
-  - file
-  - structure
-  - folders
 ---
 
 ## Folders

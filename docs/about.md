@@ -1,10 +1,8 @@
 ---
 title: About
-lunr: true
 nav_sort: 1
 nav_groups:
   - secondary
-tags: about, readme, docs-scaffold
 ---
 This scaffold makes use of a number of useful libraries.
 

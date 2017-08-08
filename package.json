@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "clean": "del-cli build/",
-    "build:script": "mkdirp build/script && uglifyjs script/script.js node_modules/barba.js/dist/barba.min.js node_modules/lunr/lunr.js node_modules/swagger-ui-dist/swagger-ui-bundle.js node_modules/swagger-ui-docs-preset/dist/swagger-ui-docs-preset.js --output build/script/script.js",
+    "build:script": "webpack && uglifyjs node_modules/barba.js/dist/barba.min.js node_modules/lunr/lunr.js node_modules/swagger-ui-dist/swagger-ui-bundle.js node_modules/swagger-ui-docs-preset/dist/swagger-ui-docs-preset.js --output build/script/vendor.js",
     "build:style": "node lib/build-style.js",
     "build:docs": "node lib/build-docs.js",
     "build": "npm run clean && npm run build:docs && npm run build:style && npm run build:script",
     "test": "npm run test:eslint && npm run test:stylelint",
     "commitmsg": "validate-commit-msg",
-    "test:eslint": "eslint index.js lib/**/*.js script/**/*.js",
+    "test:eslint": "eslint index.js lib/**/*.js script/**/*.js webpack.config.js",
+    "eslint:fix": "eslint index.js lib/**/*.js script/**/*.js webpack.config.js --fix",
     "test:stylelint": "stylelint style/**/*.scss",
     "release": "standard-version --silent",
     "release:patch": "npm run release -- --release-as patch",
@@ -62,6 +63,7 @@
     "swagger-ui-dist": "^3.0.21",
     "swagger-ui-docs-preset": "git+https://github.com/TelenorFrontend/swagger-ui-docs-preset.git",
     "telenor-component-library": "git+https://github.com/TelenorFrontend/component-library.git",
-    "uglify-es": "^3.0.27"
+    "uglify-es": "^3.0.27",
+    "webpack": "^3.5.0"
   }
 }

@@ -8,7 +8,7 @@
       {{#if file.nav_category}}
         {{#if file.title}}
           <li class="tn-breadcrumb">
-                  <span>{{ file.title }}</span>
+                  {{~ file.title ~}}
           </li>
         {{/if}}
       {{else}}
@@ -16,12 +16,12 @@
           {{#if file.title}}
               <a href="{{ @root.webRoot }}{{ path }}">{{ file.title }}</a>
           {{else}}
-              <span>{{ name }}</span>
+              {{~ name ~}}
           {{/if}}
       </li>
       {{/if}}
     {{/each}}
     <li class="tn-breadcrumb tn-breadcrumb--active">
-        <span>{{ title }}</span>
+        {{~ title ~}}
     </li>
 </ol>

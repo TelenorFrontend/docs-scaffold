@@ -136,7 +136,7 @@ gulp.task("connect:reload:script", ["script"], function() {
 gulp.task("lib:watch", () => {
     gulp.watch(
         [`${ libFolder }/*.js`, `${ libFolder }/**/*.js`],
-        ["docs", "sass", "script", "connect:reload"]
+        ["docs:dev", "sass", "script", "connect:reload"]
     );
 });
 

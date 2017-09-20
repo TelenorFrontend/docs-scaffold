@@ -11,6 +11,7 @@ const streamify = require("gulp-streamify");
 const rename = require("gulp-rename");
 const concat = require("gulp-concat");
 const source = require("vinyl-source-stream");
+const uglifySaveLicense = require("uglify-save-license");
 
 const path = require("path");
 const rimraf = require("rimraf");
@@ -87,7 +88,11 @@ gulp.task("script:watch", () => {
 gulp.task("vendor", (cb) => {
     gulp.src(vendorJs)
         .pipe(concat("vendor.js"))
-        .pipe(streamify(uglify()))
+        .pipe(streamify(uglify({
+            output: {
+                comments: uglifySaveLicense
+            }
+        })))
         .pipe(gulp.dest("./build/script"))
         .on("end", cb);
 });

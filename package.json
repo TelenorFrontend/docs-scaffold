@@ -73,6 +73,7 @@
     "telenor-component-library": "git+https://github.com/TelenorFrontend/component-library.git",
     "textversionjs": "^1.0.2",
     "uglify-es": "^3.0.27",
+    "uglify-save-license": "^0.4.1",
     "vinyl-source-stream": "^1.1.0"
   }
 }

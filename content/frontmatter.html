@@ -1,0 +1,365 @@
+<!doctype html>
+<html class="docs-html">
+<head>
+  <meta charset="utf-8">
+  <title>Front Matter - Documentation Scaffold</title>
+    <meta name="description" content="Details on how metalsmith and the documentation scaffold handles metadata.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Front Matter - Documentation Scaffold">
+  <meta name="twitter:description" content="Details on how metalsmith and the documentation scaffold handles metadata.">
+  <meta name="twitter:image" content="https://telenorfrontend.github.io/docs-scaffold/img/og_image.jpg">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Front Matter - Documentation Scaffold" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://telenorfrontend.github.io/docs-scaffold/content/frontmatter.html" />
+  <meta property="og:image" content="https://telenorfrontend.github.io/docs-scaffold/img/og_image.jpg" />
+  <meta property="og:description" content="Details on how metalsmith and the documentation scaffold handles metadata." />
+  <meta property="og:site_name" content="Documentation Scaffold" />
+
+  <link rel="stylesheet" type="text/css" href="/docs-scaffold/style/style.css">
+    <link rel="stylesheet" type="text/css" href="/docs-scaffold/script/swagger-ui/swagger-ui-docs-preset.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link id="searchIndex" href="/docs-scaffold/index.json" rel="preload" as="fetch">
+</head>
+<body class="docs-body">
+  <div id="docs-topbar" class="docs-topbar no-print">
+    <div id="docs-topbar__inner" class="docs-topbar__inner">
+      <a href="#" id="docs-menu-toggle" class="docs-topbar__icon docs-topbar__icon--menu-toggle hidden-desktop"><i class="material-icons md-24">menu</i></a>
+      <a href="#" id="docs-search-hide" class="docs-topbar__icon docs-topbar__icon--search-hide hidden-desktop"><i class="material-icons md-24">arrow_back</i></a>
+      <div class="docs-topbar__icon docs-topbar__icon--search visible-desktop"><i class="material-icons md-24">search</i></div>
+      <input id="docs-search-box" type="text" class="docs-topbar__search-box" placeholder="Search" tabindex="1" autocapitalize="none" autocomplete="off" autocorrect="off" autofocus />
+      <a href="#" id="docs-search-close" class="docs-topbar__icon docs-topbar__icon--search-close"><i class="material-icons md-24">close</i></a>
+      <a href="#" id="docs-search-show" class="docs-topbar__icon docs-topbar__icon-search-show hidden-desktop"><i class="material-icons md-24">search</i></a>
+
+          <a class="docs-topbar__link visible-desktop" href="https://github.com/TelenorFrontend/docs-scaffold">On Github</a>
+    </div>
+    <div id="docs-search" class="docs-search">
+      <ul id="docs-search-results" class="docs-search-results"></ul>
+    </div>
+  </div>
+  <div id="docs-sidebar" class="docs-sidebar visible-desktop no-print">
+    <nav class="docs-nav">
+      <a class="docs-nav__logo" href="/docs-scaffold/"></a>
+        <ul class="docs-nav__ul">
+                <li class="docs-nav__li docs-nav__li--group">
+                          <a href="/docs-scaffold/index.html" class="docs-nav__item">Docs Scaffold</a>
+                </li>
+                <li class="docs-nav__li docs-nav__li--subgroup">
+                          <a href="/docs-scaffold/quickstart.html" class="docs-nav__item">Quickstart</a>
+                </li>
+                <li class="docs-nav__li docs-nav__li--subgroup">
+                          <a href="/docs-scaffold/gettingstarted.html" class="docs-nav__item">Getting Started</a>
+                    <ul class="docs-nav__ul">
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/gettingstarted/configuring.html" class="docs-nav__item">Configuring</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/gettingstarted/writing.html" class="docs-nav__item">Writing</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/gettingstarted/building.html" class="docs-nav__item">Building</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/gettingstarted/deploying.html" class="docs-nav__item">Deploying</a>
+                            </li>
+                    </ul>
+                </li>
+                <li class="docs-nav__li docs-nav__li--subgroup">
+                          <a href="/docs-scaffold/features.html" class="docs-nav__item">Features</a>
+                    <ul class="docs-nav__ul">
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/features/layout.html" class="docs-nav__item">Layout</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/features/navigation.html" class="docs-nav__item">Navigation</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/features/search.html" class="docs-nav__item">Search</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/features/syntaxHighlight.html" class="docs-nav__item">Syntax Highlighting</a>
+                            </li>
+                    </ul>
+                </li>
+                <li class="docs-nav__li docs-nav__li--category">
+                          <span class="docs-nav__item">Content Management</span>
+                    <ul class="docs-nav__ul">
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/content/filestructure.html" class="docs-nav__item">File Structure</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/content/frontmatter.html" class="docs-nav__item">Front Matter</a>
+                            </li>
+                    </ul>
+                </li>
+                <li class="docs-nav__li docs-nav__li--category">
+                          <span class="docs-nav__item">Supported File Types</span>
+                    <ul class="docs-nav__ul">
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/filetypes/markdown.html" class="docs-nav__item">Markdown</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/filetypes/html.html" class="docs-nav__item">HTML</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/filetypes/openapi.html" class="docs-nav__item">Open API Spec</a>
+                            </li>
+                    </ul>
+                </li>
+        </ul>
+          <hr class="docs-nav__hr" />
+          <ul class="docs-nav__ul">
+                  <li class="docs-nav__li">
+                            <a href="/docs-scaffold/about.html" class="docs-nav__item">About</a>
+                  </li>
+          </ul>
+          <hr class="docs-nav__hr" />
+          <ul class="docs-nav__ul">
+                  <li class="docs-nav__li docs-nav__li--category">
+                            <span class="docs-nav__item">API Reference</span>
+                      <ul class="docs-nav__ul">
+                              <li class="docs-nav__li">
+                                        <a href="/docs-scaffold/apireference/petstore.html" class="docs-nav__item">Pet Store</a>
+                              </li>
+                              <li class="docs-nav__li">
+                                        <a href="/docs-scaffold/apireference/swaggerCodegen.html" class="docs-nav__item">Swagger Codegen</a>
+                              </li>
+                      </ul>
+                  </li>
+          </ul>
+        <div class="docs-sidebar__menuLinks hidden-desktop">
+          <hr class="docs-nav__hr" />
+          <ul class="docs-nav__ul">
+              <li class="docs-nav__li">
+                <a href="https://github.com/TelenorFrontend/docs-scaffold" class="docs-nav__item">On Github</a>
+              </li>
+          </ul>
+        </div>
+    </nav>
+  </div>
+  <div id="barba-wrapper" class="docs-wrapper">
+    <div class="docs-content barba-container">
+      <h1>Front Matter</h1>
+        <ol class="docs-breadcrumbs tn-breadcrumbs visible-desktop">
+                <li class="tn-breadcrumb">
+                    <a href="/docs-scaffold/">Home</a>
+                </li>
+                  <li class="tn-breadcrumb">Content Management</li>
+            <li class="tn-breadcrumb tn-breadcrumb--active">Front Matter</li>
+        </ol>
+      <html><head></head><body><p>Front matter allows you to attach metadata to files by prepending a yaml document to it. Metalsmith parses this yaml document and passes it along to the plugins that transform the content into beautiful documentation.</p>
+<p>If you see mentions of metadata other places in this documentation, it is usually synonymous with front matter ie. yaml that precede the actual content in a file.</p>
+<h2 id="common-tags">Common tags</h2>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>type</th>
+<th>required</th>
+<th>default</th>
+<th>details</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>title</td>
+<td>string</td>
+<td>yes</td>
+<td><code>null</code></td>
+<td>Every page must have a title that appears on top of the page and in the navigation (if the page is listed there)</td>
+</tr>
+<tr>
+<td>description</td>
+<td>string</td>
+<td>no</td>
+<td><code>null</code></td>
+<td>(<strong>Strongly recommended</strong>) A concise summary of the page. Will appear in search results. No longer than 155 characters</td>
+</tr>
+<tr>
+<td>thumbnail</td>
+<td>string</td>
+<td>no</td>
+<td><code>config.thumbnail</code></td>
+<td>Open Graph thumbnail image for the page, if not set it will default to the image set in <code>config/config.js</code>. Minimum 250x250px</td>
+</tr>
+<tr>
+<td>resolveLinks</td>
+<td>bool</td>
+<td>no</td>
+<td><code>true</code></td>
+<td>Toggles if links to source files in this file should be resolved (ie. translated to processed files). From this file <code>../index.md</code> would become <code>/web-root/index.html</code></td>
+</tr>
+<tr>
+<td>index</td>
+<td>bool</td>
+<td>no</td>
+<td><code>false</code></td>
+<td>The home/index page must be tagged with <code>index: true</code></td>
+</tr>
+</tbody></table>
+<h2 id="plugin-tags">Plugin tags</h2>
+<h3 id="layout">Layout</h3>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>type</th>
+<th>required</th>
+<th>default</th>
+<th>details</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>layout</td>
+<td>string</td>
+<td>no</td>
+<td><code>../layouts/default.hbs</code></td>
+<td>The page will use the specified layout instead of the default. For more info see <a href="/docs-scaffold/features/layout.html">the layout documentation</a></td>
+</tr>
+</tbody></table>
+<h3 id="navigation">Navigation</h3>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>type</th>
+<th>required</th>
+<th>default</th>
+<th>details</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>nav_groups</td>
+<td>string[]</td>
+<td>no</td>
+<td><code>null</code></td>
+<td>A list of navigations the page should appear in. For more info see <a href="/docs-scaffold/features/navigation.html">the navigation documentation</a></td>
+</tr>
+<tr>
+<td>nav_sort</td>
+<td>int</td>
+<td>no</td>
+<td><code>null</code></td>
+<td>Specifies the order the element should be ordered in the navigation. Overrides the default alphabetical order</td>
+</tr>
+<tr>
+<td>nav_group</td>
+<td>bool</td>
+<td>no</td>
+<td><code>false</code></td>
+<td>Specifies that the file should appear as an emphasized group in the navigation</td>
+</tr>
+<tr>
+<td>nav_category</td>
+<td>bool</td>
+<td>no</td>
+<td><code>false</code></td>
+<td>Specifies that the file should appear only as an category in the navigation (cannot be clicked itself)</td>
+</tr>
+</tbody></table>
+<h3 id="search">Search</h3>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>type</th>
+<th>required</th>
+<th>default</th>
+<th>details</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>lunr</td>
+<td>bool</td>
+<td>no</td>
+<td><code>false</code></td>
+<td>Toggles if the page should show up in search results. For more info see the <a href="/docs-scaffold/features/search.html">search documentation</a></td>
+</tr>
+<tr>
+<td>tags</td>
+<td>string or string[]</td>
+<td>no</td>
+<td><code>null</code></td>
+<td>Tags that the page should show up as a search result for. Tags have twice the weight of the title, and 10 times the weight of page content in the ordering of results. If an array of strings is used, matching will be less forgiving</td>
+</tr>
+</tbody></table>
+<h3 id="swagger-ui">Swagger UI</h3>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>type</th>
+<th>required</th>
+<th>default</th>
+<th>details</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>openApiUrl</td>
+<td>string</td>
+<td>no</td>
+<td><code>null</code></td>
+<td>An url pointing to a Open API spec</td>
+</tr>
+</tbody></table>
+<h3 id="sitemap">Sitemap</h3>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>type</th>
+<th>required</th>
+<th>default</th>
+<th>details</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>changefreq</td>
+<td>string</td>
+<td>no</td>
+<td><code>weekly</code></td>
+<td>How frequently the page is likely to change</td>
+</tr>
+<tr>
+<td>lastmod</td>
+<td>string</td>
+<td>no</td>
+<td><code>null</code></td>
+<td>The date of the last modification of the file</td>
+</tr>
+<tr>
+<td>priority</td>
+<td>decimal</td>
+<td>no</td>
+<td><code>0.5</code></td>
+<td>The priority of this page relative to other pages</td>
+</tr>
+<tr>
+<td>private</td>
+<td>bool</td>
+<td>no</td>
+<td><code>false</code></td>
+<td>Private pages will be omitted from the sitemap</td>
+</tr>
+</tbody></table>
+<p>See <a href="https://www.sitemaps.org/protocol.html">https://www.sitemaps.org/protocol.html</a> for valid values.</p>
+<h2 id="example">Example</h2>
+<p>In the following example the metadata tag <code>title</code> is set to <code>Example page</code>, and the page content is <code>This is the example page</code>.</p>
+<pre><code class="hljs"><span class="hljs-meta">---</span>
+<span class="hljs-attr">title:</span> Example page
+<span class="hljs-meta">---</span>
+This is the example page</code></pre></body></html>
+      <div class="lesson-nav">
+      </div>
+        <a class="docs-edit-btn no-print" href="https://github.com/TelenorFrontend/docs-scaffold/edit/master/docs/content/frontmatter.md" target="_blank">Edit this page</a>
+    </div>
+  </div>
+    <script src="/docs-scaffold/script/swagger-ui/swagger-ui-bundle.js" ></script>
+    <script src="/docs-scaffold/script/swagger-ui/swagger-ui-docs-preset.js" ></script>
+  <script src="/docs-scaffold/script/vendor.js" ></script>
+  <script src="/docs-scaffold/script/script.js" ></script>
+</body>
+</html>

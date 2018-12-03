@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://telenorfrontend.github.io/docs-scaffold/filetypes/html.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://telenorfrontend.github.io/docs-scaffold/about.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://telenorfrontend.github.io/docs-scaffold/features.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://telenorfrontend.github.io/docs-scaffold/gettingstarted.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://telenorfrontend.github.io/docs-scaffold/index.html</loc> <changefreq>weekly</changefreq> <priority>0.8</priority> </url>
+<url> <loc>https://telenorfrontend.github.io/docs-scaffold/quickstart.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://telenorfrontend.github.io/docs-scaffold/content/filestructure.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://telenorfrontend.github.io/docs-scaffold/content/frontmatter.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://telenorfrontend.github.io/docs-scaffold/features/layout.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://telenorfrontend.github.io/docs-scaffold/features/navigation.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://telenorfrontend.github.io/docs-scaffold/features/search.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://telenorfrontend.github.io/docs-scaffold/features/syntaxHighlight.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://telenorfrontend.github.io/docs-scaffold/filetypes/markdown.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://telenorfrontend.github.io/docs-scaffold/filetypes/openapi.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://telenorfrontend.github.io/docs-scaffold/gettingstarted/building.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://telenorfrontend.github.io/docs-scaffold/gettingstarted/configuring.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://telenorfrontend.github.io/docs-scaffold/gettingstarted/deploying.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://telenorfrontend.github.io/docs-scaffold/gettingstarted/writing.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://telenorfrontend.github.io/docs-scaffold/apireference/petstore.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://telenorfrontend.github.io/docs-scaffold/apireference/swaggerCodegen.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+</urlset>

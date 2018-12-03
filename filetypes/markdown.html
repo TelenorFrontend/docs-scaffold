@@ -1,0 +1,190 @@
+<!doctype html>
+<html class="docs-html">
+<head>
+  <meta charset="utf-8">
+  <title>Markdown - Documentation Scaffold</title>
+    <meta name="description" content="Example of a markdown file.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Markdown - Documentation Scaffold">
+  <meta name="twitter:description" content="Example of a markdown file.">
+  <meta name="twitter:image" content="https://telenorfrontend.github.io/docs-scaffold/img/og_image.jpg">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Markdown - Documentation Scaffold" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://telenorfrontend.github.io/docs-scaffold/filetypes/markdown.html" />
+  <meta property="og:image" content="https://telenorfrontend.github.io/docs-scaffold/img/og_image.jpg" />
+  <meta property="og:description" content="Example of a markdown file." />
+  <meta property="og:site_name" content="Documentation Scaffold" />
+
+  <link rel="stylesheet" type="text/css" href="/docs-scaffold/style/style.css">
+    <link rel="stylesheet" type="text/css" href="/docs-scaffold/script/swagger-ui/swagger-ui-docs-preset.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link id="searchIndex" href="/docs-scaffold/index.json" rel="preload" as="fetch">
+</head>
+<body class="docs-body">
+  <div id="docs-topbar" class="docs-topbar no-print">
+    <div id="docs-topbar__inner" class="docs-topbar__inner">
+      <a href="#" id="docs-menu-toggle" class="docs-topbar__icon docs-topbar__icon--menu-toggle hidden-desktop"><i class="material-icons md-24">menu</i></a>
+      <a href="#" id="docs-search-hide" class="docs-topbar__icon docs-topbar__icon--search-hide hidden-desktop"><i class="material-icons md-24">arrow_back</i></a>
+      <div class="docs-topbar__icon docs-topbar__icon--search visible-desktop"><i class="material-icons md-24">search</i></div>
+      <input id="docs-search-box" type="text" class="docs-topbar__search-box" placeholder="Search" tabindex="1" autocapitalize="none" autocomplete="off" autocorrect="off" autofocus />
+      <a href="#" id="docs-search-close" class="docs-topbar__icon docs-topbar__icon--search-close"><i class="material-icons md-24">close</i></a>
+      <a href="#" id="docs-search-show" class="docs-topbar__icon docs-topbar__icon-search-show hidden-desktop"><i class="material-icons md-24">search</i></a>
+
+          <a class="docs-topbar__link visible-desktop" href="https://github.com/TelenorFrontend/docs-scaffold">On Github</a>
+    </div>
+    <div id="docs-search" class="docs-search">
+      <ul id="docs-search-results" class="docs-search-results"></ul>
+    </div>
+  </div>
+  <div id="docs-sidebar" class="docs-sidebar visible-desktop no-print">
+    <nav class="docs-nav">
+      <a class="docs-nav__logo" href="/docs-scaffold/"></a>
+        <ul class="docs-nav__ul">
+                <li class="docs-nav__li docs-nav__li--group">
+                          <a href="/docs-scaffold/index.html" class="docs-nav__item">Docs Scaffold</a>
+                </li>
+                <li class="docs-nav__li docs-nav__li--subgroup">
+                          <a href="/docs-scaffold/quickstart.html" class="docs-nav__item">Quickstart</a>
+                </li>
+                <li class="docs-nav__li docs-nav__li--subgroup">
+                          <a href="/docs-scaffold/gettingstarted.html" class="docs-nav__item">Getting Started</a>
+                    <ul class="docs-nav__ul">
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/gettingstarted/configuring.html" class="docs-nav__item">Configuring</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/gettingstarted/writing.html" class="docs-nav__item">Writing</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/gettingstarted/building.html" class="docs-nav__item">Building</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/gettingstarted/deploying.html" class="docs-nav__item">Deploying</a>
+                            </li>
+                    </ul>
+                </li>
+                <li class="docs-nav__li docs-nav__li--subgroup">
+                          <a href="/docs-scaffold/features.html" class="docs-nav__item">Features</a>
+                    <ul class="docs-nav__ul">
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/features/layout.html" class="docs-nav__item">Layout</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/features/navigation.html" class="docs-nav__item">Navigation</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/features/search.html" class="docs-nav__item">Search</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/features/syntaxHighlight.html" class="docs-nav__item">Syntax Highlighting</a>
+                            </li>
+                    </ul>
+                </li>
+                <li class="docs-nav__li docs-nav__li--category">
+                          <span class="docs-nav__item">Content Management</span>
+                    <ul class="docs-nav__ul">
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/content/filestructure.html" class="docs-nav__item">File Structure</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/content/frontmatter.html" class="docs-nav__item">Front Matter</a>
+                            </li>
+                    </ul>
+                </li>
+                <li class="docs-nav__li docs-nav__li--category">
+                          <span class="docs-nav__item">Supported File Types</span>
+                    <ul class="docs-nav__ul">
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/filetypes/markdown.html" class="docs-nav__item">Markdown</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/filetypes/html.html" class="docs-nav__item">HTML</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/docs-scaffold/filetypes/openapi.html" class="docs-nav__item">Open API Spec</a>
+                            </li>
+                    </ul>
+                </li>
+        </ul>
+          <hr class="docs-nav__hr" />
+          <ul class="docs-nav__ul">
+                  <li class="docs-nav__li">
+                            <a href="/docs-scaffold/about.html" class="docs-nav__item">About</a>
+                  </li>
+          </ul>
+          <hr class="docs-nav__hr" />
+          <ul class="docs-nav__ul">
+                  <li class="docs-nav__li docs-nav__li--category">
+                            <span class="docs-nav__item">API Reference</span>
+                      <ul class="docs-nav__ul">
+                              <li class="docs-nav__li">
+                                        <a href="/docs-scaffold/apireference/petstore.html" class="docs-nav__item">Pet Store</a>
+                              </li>
+                              <li class="docs-nav__li">
+                                        <a href="/docs-scaffold/apireference/swaggerCodegen.html" class="docs-nav__item">Swagger Codegen</a>
+                              </li>
+                      </ul>
+                  </li>
+          </ul>
+        <div class="docs-sidebar__menuLinks hidden-desktop">
+          <hr class="docs-nav__hr" />
+          <ul class="docs-nav__ul">
+              <li class="docs-nav__li">
+                <a href="https://github.com/TelenorFrontend/docs-scaffold" class="docs-nav__item">On Github</a>
+              </li>
+          </ul>
+        </div>
+    </nav>
+  </div>
+  <div id="barba-wrapper" class="docs-wrapper">
+    <div class="docs-content barba-container">
+      <h1>Markdown</h1>
+        <ol class="docs-breadcrumbs tn-breadcrumbs visible-desktop">
+                <li class="tn-breadcrumb">
+                    <a href="/docs-scaffold/">Home</a>
+                </li>
+                  <li class="tn-breadcrumb">Supported File Types</li>
+            <li class="tn-breadcrumb tn-breadcrumb--active">Markdown</li>
+        </ol>
+      <p>Files with <code>.md</code> or <code>.markdown</code> extensions will be parsed by <a href="https://github.com/segmentio/metalsmith-markdown">metalsmith-markdown</a>, which is essentially a wrapper for <a href="https://github.com/chjj/marked">Marked</a>.</p>
+<h2 id="images">Images</h2>
+<p>Images should usually be located in the <code>img</code> folder, and should be referenced using relative paths. The image will be displayed with its native resolution unless it is too big to fit the container (in which case it will be downsized).</p>
+<pre><code class="hljs markdown">![<span class="hljs-string">Stock Photo</span>](<span class="hljs-link">../img/pexels-photo-272887.jpeg</span>)</code></pre>
+
+<p><img src="../img/pexels-photo-272887.jpeg" alt="Stock Photo"></p>
+<p>If the image should be resized, a little bit of inline html is necessary.</p>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../img/pexels-photo-272887.jpeg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Small Stock Photo"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"100"</span> /&gt;</span></code></pre>
+
+<img src="../img/pexels-photo-272887.jpeg" alt="Small Stock Photo" width="100" />
+
+<h2 id="inline-html">Inline html</h2>
+<p>Inline html can be written anywhere in a markdown file if advanced components are needed.</p>
+<h3 id="example-inline-html-component">Example inline html component</h3>
+<p>The following component is from <a href="https://github.com/TelenorFrontend/component-library">the Telenor Frontend component library</a>.</p>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tn-steps"</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tn-step tn-step--active"</span>&gt;</span>Identify problem<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tn-step"</span>&gt;</span>Propose solution<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tn-step"</span>&gt;</span>Review<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span></code></pre>
+<ol class="tn-steps">
+ <li class="tn-step tn-step--active">Identify problem</li>
+ <li class="tn-step">Propose solution</li>
+ <li class="tn-step">Review</li>
+</ol>
+
+      <div class="lesson-nav">
+      </div>
+        <a class="docs-edit-btn no-print" href="https://github.com/TelenorFrontend/docs-scaffold/edit/master/docs/filetypes/markdown.md" target="_blank">Edit this page</a>
+    </div>
+  </div>
+    <script src="/docs-scaffold/script/swagger-ui/swagger-ui-bundle.js" ></script>
+    <script src="/docs-scaffold/script/swagger-ui/swagger-ui-docs-preset.js" ></script>
+  <script src="/docs-scaffold/script/vendor.js" ></script>
+  <script src="/docs-scaffold/script/script.js" ></script>
+</body>
+</html>

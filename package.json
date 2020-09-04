@@ -73,7 +73,7 @@
     "gulp-sourcemaps": "^2.6.1",
     "gulp-streamify": "^1.0.2",
     "gulp-uglify": "^3.0.0",
-    "handlebars": "^4.0.10",
+    "handlebars": "^4.4.5",
     "highlight.js": "^9.12.0",
     "lunr": "^2.1.2",
     "metalsmith": "^2.3.0",

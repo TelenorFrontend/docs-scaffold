@@ -74,7 +74,7 @@
     "gulp-streamify": "^1.0.2",
     "gulp-uglify": "^3.0.0",
     "handlebars": "^4.5.3",
-    "highlight.js": "^9.12.0",
+    "highlight.js": "^10.4.1",
     "lunr": "^2.1.2",
     "metalsmith": "^2.3.0",
     "metalsmith-collections": "^0.9.0",
